@@ -10,8 +10,11 @@ import SwiftUI
 @main
 struct SecondVOSApp: App {
     var body: some Scene {
-        WindowGroup {
+        WindowGroup(id:"Window") {
             ContentView()
         }
+        WindowGroup (id:"Volume"){
+            AstronautExperience() 
+        }.windowStyle(.volumetric)
     }
 }

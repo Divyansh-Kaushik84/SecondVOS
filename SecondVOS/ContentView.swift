@@ -1,26 +1,33 @@
 //
-//  ContentView.swift
-//  SecondVOS
+//  AstronautView.swift
+//  FirstVOS
 //
 //  Created by Divyansh Kaushik on 13/09/24.
 //
 
 import SwiftUI
-import RealityKit
-import RealityKitContent
+import _RealityKit_SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
+    @Environment(\.openWindow) private var openWindow
 
-            Text("Hello, world!")
+    var body: some View {
+        ZStack{
+            Image("image_astro")
+                .resizable()
+                .scaledToFill()
+            Button(action:{
+                openWindow(id: "Volume")
+            }){
+                Text("Explore More")
+            }                  
+            .controlSize(.extraLarge)
+
+
         }
-        .padding()
     }
 }
 
-#Preview(windowStyle: .automatic) {
+#Preview {
     ContentView()
 }

@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		BBDACED02C93AAB00027D826 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = BBDACECF2C93AAB00027D826 /* RealityKitContent */; };
 		BBDACED22C93AAB00027D826 /* SecondVOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDACED12C93AAB00027D826 /* SecondVOSApp.swift */; };
-		BBDACED42C93AAB00027D826 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDACED32C93AAB00027D826 /* ContentView.swift */; };
 		BBDACED62C93AAB20027D826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDACED52C93AAB20027D826 /* Assets.xcassets */; };
 		BBDACED92C93AAB20027D826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDACED82C93AAB20027D826 /* Preview Assets.xcassets */; };
 		BBDACEE42C93AAB20027D826 /* SecondVOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDACEE32C93AAB20027D826 /* SecondVOSTests.swift */; };
+		BBDACEEE2C93AB180027D826 /* AstronautExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDACEED2C93AB180027D826 /* AstronautExperience.swift */; };
+		BBDACEF02C93ABAA0027D826 /* Astronaut.reality in Resources */ = {isa = PBXBuildFile; fileRef = BBDACEEF2C93ABA90027D826 /* Astronaut.reality */; };
+		BBDACEF82C93AC7A0027D826 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDACEF72C93AC7A0027D826 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,12 +31,14 @@
 		BBDACECA2C93AAB00027D826 /* SecondVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDACECE2C93AAB00027D826 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		BBDACED12C93AAB00027D826 /* SecondVOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVOSApp.swift; sourceTree = "<group>"; };
-		BBDACED32C93AAB00027D826 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BBDACED52C93AAB20027D826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBDACED82C93AAB20027D826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBDACEDA2C93AAB20027D826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBDACEDF2C93AAB20027D826 /* SecondVOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondVOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDACEE32C93AAB20027D826 /* SecondVOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVOSTests.swift; sourceTree = "<group>"; };
+		BBDACEED2C93AB180027D826 /* AstronautExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautExperience.swift; sourceTree = "<group>"; };
+		BBDACEEF2C93ABA90027D826 /* Astronaut.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = Astronaut.reality; path = ../FirstVOS/FirstVOS/Astronaut.reality; sourceTree = "<group>"; };
+		BBDACEF72C93AC7A0027D826 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		BBDACEC12C93AAB00027D826 = {
 			isa = PBXGroup;
 			children = (
+				BBDACEEF2C93ABA90027D826 /* Astronaut.reality */,
 				BBDACECC2C93AAB00027D826 /* SecondVOS */,
 				BBDACECD2C93AAB00027D826 /* Packages */,
 				BBDACEE22C93AAB20027D826 /* SecondVOSTests */,
@@ -78,8 +83,9 @@
 		BBDACECC2C93AAB00027D826 /* SecondVOS */ = {
 			isa = PBXGroup;
 			children = (
+				BBDACEF72C93AC7A0027D826 /* ContentView.swift */,
 				BBDACED12C93AAB00027D826 /* SecondVOSApp.swift */,
-				BBDACED32C93AAB00027D826 /* ContentView.swift */,
+				BBDACEED2C93AB180027D826 /* AstronautExperience.swift */,
 				BBDACED52C93AAB20027D826 /* Assets.xcassets */,
 				BBDACEDA2C93AAB20027D826 /* Info.plist */,
 				BBDACED72C93AAB20027D826 /* Preview Content */,
@@ -196,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBDACED92C93AAB20027D826 /* Preview Assets.xcassets in Resources */,
+				BBDACEF02C93ABAA0027D826 /* Astronaut.reality in Resources */,
 				BBDACED62C93AAB20027D826 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,8 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBDACED42C93AAB00027D826 /* ContentView.swift in Sources */,
+				BBDACEEE2C93AB180027D826 /* AstronautExperience.swift in Sources */,
 				BBDACED22C93AAB00027D826 /* SecondVOSApp.swift in Sources */,
+				BBDACEF82C93AC7A0027D826 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
